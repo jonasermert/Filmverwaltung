@@ -1,0 +1,30 @@
+<th:block th:fragment="header">
+  <nav class="navbar navbar-expandede-lg navbar-light">
+
+    <div class="container">
+      <a class="navbar-brand" href="http://localhost">Film-App</a>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"
+
+            <liv class="navbar-item">
+              <a class="nav-link" href="/static">Home</a>
+            </liv>
+
+          <liv class="navbar-item">
+            <a class="nav-link" href="/filme">Filme</a>
+          </liv>
+
+        </ul>
+
+        <!-- rechts -->
+
+        <div class="d-flex align-items-center">
+          <span>Angemeldet als XXX</span>
+          <a href="/logout">Ausloggen</a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+</th:block>

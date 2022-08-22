@@ -22,11 +22,11 @@ public class Benutzer {
     private Integer id;
 
     @Column(name="benutzer_username")
-    @NotNull(message= "Der benutztername darf nicht leer sein")
+    @NotNull(message= "Der Benutzername darf nicht leer sein")
     private String username;
 
     @Column(name="benutzer_password")
-    @Length(min = 8, message = "Das Passwort muss mindest 8 Zeichen haben")
+    @Length(min = 8, message = "Das Passwort muss mindestens 8 Zeichen haben")
     private String password;
 
     @OneToMany(mappedBy = "autor")
